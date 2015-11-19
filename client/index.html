@@ -3,10 +3,11 @@
 </head>
 
 <body>
-	
-
   {{> hello}}
 </body>
+
+
+
 
 <template name="hello">
   <div class="container">
@@ -18,38 +19,46 @@
 		</div>
 	</div>
 
+    <div id="mad-lib-sentence">
+      <label class="control-label"><label class="control-label" id="exclamation-mad-lib"></label> he said, as he <label class="control-label" id="adverb-mad-lib"></label> jumped onto his <label class="control-label" id="noun-mad-lib"></label> and <label class="control-label" id="verb-mad-lib"></label> into the sunset.</label>
+    </div>
+
 	<div class="container">
 		<div class="row">
 	<div class="flex-container">
 	<form class="form-horizontal" role="form">
-		
+
+<div class="col-sm-12">
   <div class="form-group">
-    <label class="control-label col-sm-4" for="pwd">Exclamation</label>
-    <div class="col-sm-8"> 
-      <input class="form-control" id="exclamation" placeholder="Enter password">
+    <label class="control-label" >Exclamation</label>
+     
+      <input class="form-control" id="exclamation" placeholder="Huzzah, Egads, Shazbot ...">
     </div>
   </div>
+  <div class="col-sm-12"> 
    <div class="form-group">
-    <label class="control-label col-sm-4" for="pwd">Adverbs</label>
-    <div class="col-sm-8"> 
-      <input type="text" class="form-control" id="adverb" placeholder="Enter password">
+    <label class="control-label" >Adverbs</label>
+    
+      <input type="text" class="form-control" id="adverb" placeholder="Lazily, sloppily, quickly ...">
     </div>
   </div>
+  <div class="col-sm-12"> 
    <div class="form-group">
-    <label class="control-label col-sm-4" for="pwd">Noun</label>
-    <div class="col-sm-8"> 
-      <input type="text" class="form-control" id="noun" placeholder="Enter password">
+    <label class="control-label" >Noun</label>
+    
+      <input type="text" class="form-control" id="noun" placeholder="dog, horse, meerkat ...">
     </div>
   </div>
+  <div class="col-sm-12"> 
    <div class="form-group">
-    <label class="control-label col-sm-4" for="pwd">Verb</label>
-    <div class="col-sm-8"> 
-      <input type="password" class="form-control" id="verb" placeholder="Enter password">
+    <label class="control-label" >Verb</label>
+      <input type="text" class="form-control" id="verb" placeholder="ran, danced, twerked....">
     </div>
   </div>
+
   <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10">
-      <button id="generateButton" type="button" class="btn btn-default">Submit</button>
+      <button id="generateButton" type="button" class="btn btn-default">Generate</button>
     </div>
   </div>
 

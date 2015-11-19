@@ -4,3 +4,9 @@
 	align-items: center;
 	min-height: 100vh;
 }/* CSS declarations go here */
+
+#mad-lib-sentence {
+	color: #0000ff;
+	text-align: center;
+	font-size: 18px;
+}
