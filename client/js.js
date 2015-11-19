@@ -6,16 +6,13 @@ Meteor.startup(function() {
   var adverb = $('#adverb').val();
   var noun = $('#noun').val();;
   var verb = $('#verb').val();;
-  console.log(exclamation);
-  console.log(adverb);
-  console.log(noun);
-  console.log(verb);
 
   $('#exclamation-mad-lib').html(exclamation)
   $('#adverb-mad-lib').html(adverb)
   $('#noun-mad-lib').html(noun)
   $('#verb-mad-lib').html(verb)
 
+  $('p').hide()
   $('#mad-lib-sentence').fadeIn("slow")
 
   });
