@@ -1,23 +1,30 @@
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+Meteor.startup(function() {
+  $('#mad-lib-sentence').hide()
+  $("#generateButton").click(function(event) {
+  event.preventDefault();
+  var exclamation = $('#exclamation').val();
+  var adverb = $('#adverb').val();
+  var noun = $('#noun').val();;
+  var verb = $('#verb').val();;
+  console.log(exclamation);
+  console.log(adverb);
+  console.log(noun);
+  console.log(verb);
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
+  $('#exclamation-mad-lib').html(exclamation)
+  $('#adverb-mad-lib').html(adverb)
+  $('#noun-mad-lib').html(noun)
+  $('#verb-mad-lib').html(verb)
+
+  $('#mad-lib-sentence').fadeIn("slow")
+
   });
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-}
+});
 
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+
+
+// Template.hello.events({
+//   "click button":function(){
+//     console.log(exclamation)
+//   }  });
